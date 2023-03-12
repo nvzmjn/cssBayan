@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
 
+@media screen and (max-width: 1920px) {
 
 body {
 	background-color: #eff0e0;
@@ -21,7 +22,7 @@ h1 {
 
 .line {
 	color: black;
-	
+
 }
 
 
@@ -38,6 +39,7 @@ label {
 	padding: 0 15px 0 15px;
 	margin: 15px auto;
 }
+
 
 label span {
 	font-size: 25px;
@@ -68,15 +70,12 @@ label span {
 	transform: rotate(180deg);
 }
 
-/* span:hover {
-	transform: rotate(180deg);
-} */
 
 input[type="radio"] {
 	display: none;
 }
 
-/* Set default style for the accordion headers */
+
 .accordion {
 	background-color: #eee;
 	color: #444;
@@ -90,17 +89,11 @@ input[type="radio"] {
 	transition: 0.4s;
 }
 
-/* Style the accordion headers when they are active (clicked on) */
-/* .accordion:hover+label {
-	background-color: #ccc;
-} */
 
 .accordion:checked+label {
-	/* background-color: #a4e0b3; */
 	color: #2a2dda;
 }
 
-/* Hide the accordion content by default */
 .panel {
 	max-height: 0;
 	overflow: hidden;
@@ -112,20 +105,50 @@ img {
 	margin: 0 auto;
 }
 
-/* Show the accordion content when the corresponding header is active (clicked on) */
+
 .accordion:checked~.panel,
 .accordion:hover~.panel {
 	max-height: 1000px;
-	/* a large enough value to accommodate the panel content */
 	transition: max-height 0.35s ease-in-out;
 	padding: 18px;
 	margin-bottom: 10px;
 }
 
-/* Style the accordion headers */
 
-
-/* Style the accordion content */
 .panel>* {
 	margin-bottom: 10px;
+}
+
+}
+
+@media screen and (max-width: 1250px) {
+
+	.accrd1,
+	.accrd2,
+	.accrd3,
+	.accrd4,
+	.accrd5 {
+		width: 800px;
+	}
+
+	.accrd-container {
+		width: 800px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+
+	.accrd1,
+	.accrd2,
+	.accrd3,
+	.accrd4,
+	.accrd5 {
+		width: 300px;
+	}
+
+	.accrd-container {
+		width: 300px;
+	}
+
 }
