@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Accordion Example</title>
-    <style>
-      /* Style the buttons that are used to open and close the accordion panel */
-      .accordion {
-        background-color: #eee;
-        color: #444;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        text-align: left;
-        border: none;
-        outline: none;
-        transition: 0.4s;
-      }
 
-      /* Style the accordion content panel */
-      .panel {
-        padding: 0 18px;
-        background-color: white;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.2s ease-out;
-      }
+<head>
+	<title>cssBayan</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 
-      /* Change the accordion button style when it is active (pressed) */
-      .accordion:focus, .accordion:hover {
-        background-color: #ccc;
-      }
+<body>
+	<div class="accrd-container">
+		<!-- Create the accordion headers using radio buttons and labels -->
+		<div class="accrd1">
+			<input type="radio" class="accordion" name="accordion" id="section-1">
+			<label for="section-1"><b>LIFE AFTER STUDYING</b> <span>&#x25BE</span></label>
+			<div class="panel">
+				<img src="./Images/1.jpg" alt="meme">
+			</div>
+		</div>
 
-      /* Change the accordion content panel style when it is active (expanded) */
-      .accordion:focus + .panel, .accordion:hover + .panel {
-        max-height: 500px; /* or any other desired value */
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Create the accordion using HTML and CSS -->
-    <button class="accordion">Section 1</button>
-    <div class="panel">
-      <p>Some text in section 1.</p>
-    </div>
+		<div class="accrd2">
+			<input type="radio" class="accordion" name="accordion" id="section-2">
+			<label for="section-2">Section 2 <span>&#x25BE</span></label>
+			<div class="panel">
+				<p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+					curae; Etiam quis ante euismod, gravida velit at, convallis odio.</p>
+			</div>
+		</div>
 
-    <button class="accordion">Section 2</button>
-    <div class="panel">
-      <p>Some text in section 2.</p>
-    </div>
+		<div class="accrd3">
+			<input type="radio" class="accordion" name="accordion" id="section-3">
+			<label for="section-3">Section 3 <span>&#x25BE</span></label>
+			<div class="panel">
+				<p>Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
+					curae; Etiam quis ante euismod, gravida velit at, convallis odio.</p>
+			</div>
+		</div>
+	</div>
+</body>
 
-    <button class="accordion">Section 3</button>
-    <div class="panel">
-      <p>Some text in section 3.</p>
-    </div>
-  </body>
 </html>
