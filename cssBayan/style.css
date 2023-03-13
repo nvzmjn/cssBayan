@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+@media screen and (max-width: 1920px) {
+
+body {
+	background-color: #eff0e0;
+}
+
+.accrd {
+	width: 900px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Tilt Warp', cursive;
+	font-size: 35px;
+}
+
+.line {
+	color: black;
+
+}
+
+label {
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	font-family: 'Tilt Warp', cursive;
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	height: 40px;
+	align-items: center;
+	padding: 0 15px 0 15px;
+	margin: 15px auto;
+	cursor: pointer;
+}
+
+
+label span {
+	font-size: 35px;
+	opacity: 0;
+}
+
+
+.accrd-container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.accrd-container:hover label span {
+	opacity: 1;
+	color: black;
+}
+
+.accrd-container:hover label {
+	color: #2a2dda;
+}
+
+
+.accordion:checked+label span {
+	transform: rotate(180deg);
+}
+
+.accordion:hover+label span {
+	transform: rotate(180deg);
+}
+
+
+input[type="radio"] {
+	display: none;
+}
+
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+
+.accordion:checked+label {
+	color: #2a2dda;
+}
+
+.panel {
+	display: block;
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	text-align: center;
+	cursor: pointer;
+}
+
+img {
+	margin: 0 auto;
+}
+
+.accrd:checked .panel,
+.accrd:hover .panel {
+	max-height: 500px;
+	transition: max-height 0.35s ease-in-out;
+	padding: 18px;
+	margin-bottom: 10px;
+}
+
+.accordion:checked ~.panel {
+	max-height: 500px;
+	transition: max-height 0.35s ease-in-out;
+	padding: 18px;
+	margin-bottom: 10px;
+}
+
+
+.panel>* {
+	margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 1250px) {
+
+	.accrd {
+		width: 800px;
+	}
+
+	.accrd-container {
+		width: 800px;
+	}
+
+	h1 {
+		font-size: 25px;
+	}
+
+	label {
+		font-size: 20px;
+		height: 30px;
+		align-items: center;
+		margin: 10px auto;
+	}
+}
+
+
+@media (max-width: 600px) {
+
+	.accrd {
+		width: 300px;
+	}
+
+	.accrd-container {
+		width: 300px;
+	}
+
+	h1 {
+		font-size: 15px;
+	}
+
+	label {
+		font-size: 15px;
+		height: 20px;
+		align-items: center;
+		margin: 10px auto;
+	}
+
+}
